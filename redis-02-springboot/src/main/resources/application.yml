@@ -1,0 +1,7 @@
+
+
+# ≈‰÷√redis
+spring:
+  redis:
+    host: 10.0.0.102
+    port: 6379
