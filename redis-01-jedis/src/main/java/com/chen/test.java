@@ -12,7 +12,7 @@ import redis.clients.jedis.Jedis;
 public class test {
     public static void main(String[] args) {
         //1. jedis对象
-        Jedis jedis = new Jedis("10.0.0.102",6379);
+        Jedis jedis = new Jedis("192.168.31.90",6379);
         jedis.flushAll();
         jedis.sadd("name","chenzuhai","666");
 

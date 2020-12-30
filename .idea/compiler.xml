@@ -8,12 +8,20 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="redis-01-jedis" />
+        <module name="redis-03-train" />
         <module name="redis-02-springboot" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="redis-01-jedis" target="1.5" />
       <module name="redis-02-springboot" target="1.8" />
+      <module name="redis-03-train" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="redis-02-springboot" options="-parameters" />
+      <module name="redis-03-train" options="-parameters" />
+    </option>
   </component>
 </project>
